@@ -20,6 +20,7 @@ include 'connectdb.php';
 <label for="orderasc"> Ascending Order </label><br>
 <input type="radio" id = "orderdesc" name="ordering"  value="orderdesc">
 <label for="orderdesc"> Descending Order </label><br>
+<br/><input type="submit" value="submit"/>
 </form>
 <?php
 include 'getdata.php'

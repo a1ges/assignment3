@@ -21,9 +21,9 @@ include 'connectdb.php';
 // Selecting all elements from bustrips   
 $query = "SELECT * FROM bustrips";
 // if Orderasc radio button selected. Order by ascending tripname (work out for country as well)
-   if(isset($_GET['orderasc'])) $query .= " ORDER BY tripname ASC"; 
+   if(isset($_GET['ordering'])) $query .= " ORDER BY tripname ASC"; 
 // same as previous line but descending
-   if(isset($_GET['orderdesc'])) $query .=" ORDER BY tripname DESC";
+   if(isset($_GET['ordering'])) $query .=" ORDER BY tripname DESC";
    $result = mysqli_query($connection,$query) or die(mysqlerror());
 // if not dead result , print the table
 

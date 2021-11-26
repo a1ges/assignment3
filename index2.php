@@ -18,7 +18,7 @@ include 'connectdb.php';
 <form name = "radioOptions" method="POST">
 <tr> <td style="text-align:center"><input type="radio" id = "orderasc" name ="ordering"  value="orderasc" >
 <label for="orderasc"> Ascending Order </label>  </td>
-<td style="text-align:center"><input type="radio" id = "tripnameOcountry" name ="tripnameOcountry"  value="countryvisited" >
+<td style="text-align:center"><input type="radio" id = "tripnameOcountry" name ="tripnameOcountry"  value="visitedcountry" >
 <label for="orderasc"> Order by: Country names </label>  </td></tr>
 
 <br><tr> <td style="text-align:center"><input type="radio" id = "orderdesc" name="ordering"  value="orderdesc">

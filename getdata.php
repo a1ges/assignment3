@@ -1,6 +1,6 @@
 <?php
 
-
+include 'connectdb.php';
 // Selecting all elements from bustrips   
 $query = "SELECT * FROM bustrips";
 // if Orderasc radio button selected. Order by ascending tripname (work out for country as well)

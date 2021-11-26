@@ -17,11 +17,6 @@ $query = "SELECT * FROM bustrips";
 // if not dead result , print the table
 
 if($result->num_rows>0){
-   echo " <script type=\"text/javascript\">
-   var e = document.getElementById('selectCountry'); e.action='populateBusTrips.php'; e.submit();
-   echo \" Hello world\";
-   </script>
-";
    echo "<form name = \"selectCountry\" method = \"POST\">";
 
 
@@ -40,7 +35,7 @@ echo "<th>Trip ID</th>";
      // add radio button for easier country editting
      
      echo "<td style=\"text-align:center\">";
-     echo "<input type=\"radio\" id = \"countrySelect\" name =\"countrySelect\" value=". $row['visitedcountry']. " width=\"100\" height=\"100\" onclick=\"validateRadio();\">";
+     echo "<input type=\"radio\" id = \"countrySelect\" name =\"countrySelect\" value=". $row['visitedcountry']. " width=\"100\" height=\"100\" >";
      echo "</td>";
      
      echo "<td style=\"text-align:center\">";

@@ -31,7 +31,11 @@ echo "<th>Trip ID</th>";
      echo "<input type=\"radio\" id = \"countrySelect\" name =\"countrySelect\" value=". $row['visitedcountry']. ">";
      echo "</td>";
      echo "<td style=\"text-align:center\">";
-     echo $row["urlimage"];
+     if($row["urlimage"] != NULL){
+     echo "<img src=". $row["urlimage"] .">";
+     }ELSE{
+      echo "<img src= https://icon-library.com/images/null-icon/null-icon-1.jpg>";
+     }
      echo "</td>";
      echo "<td style=\"text-align:center\">";
      echo $row["tripname"];

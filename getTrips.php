@@ -17,7 +17,7 @@ $query = "SELECT * FROM bustrips";
 // if not dead result , print the table
 
 if($result->num_rows>0){
-   echo "<form name = \"selectCountry\" method = \"GET\">";
+   echo "<form name = \"selectCountry\" method = \"POST\">";
 
 
    echo "<table id = \"tripstable\">";

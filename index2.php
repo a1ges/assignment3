@@ -16,11 +16,16 @@ include 'connectdb.php';
 ?>
 <h1>Welcome to the Western Bus Trip Editor</h1>
 <form name = "radioOptions" method="POST">
-<input type="radio" id = "orderasc" name ="ordering"  value="orderasc" >
-<label for="orderasc"> Ascending Order </label><br>
-<input type="radio" id = "orderdesc" name="ordering"  value="orderdesc">
-<label for="orderdesc"> Descending Order </label><br>
-<br/><input type="submit" value="submit"/>
+<tr> <td style="text-align:center"><input type="radio" id = "orderasc" name ="ordering"  value="orderasc" >
+<label for="orderasc"> Ascending Order </label>  </td>
+<td style="text-align:center">"<input type="radio" id = "tripnameOcountry" name ="tripnameOcountry"  value="country" >
+<label for="orderasc"> Ascending Order </label>  </td></tr>
+
+<tr> <td style="text-align:center"><input type="radio" id = "orderdesc" name="ordering"  value="orderdesc">
+<label for="orderdesc"> Descending Order </label><br></td>
+<td style="text-align:center">"<input type="radio" id = "tripnameOcountry" name ="tripnameOcountry"  value="tripname" >
+<label for="orderasc"> Ascending Order </label>  </td></tr>
+<input type="submit" value="submit"/>
 </form>
 <?php
 include 'getdata.php'

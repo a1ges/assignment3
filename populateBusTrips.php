@@ -37,12 +37,6 @@ echo "$query";
           <td style=\"text-align:center\"><input type=\"text\" id=\"trpid\" name=\"tripid\" readonly style = \"background-color: grey;\"></td>
           <td style=\"text-align:center\"><input type=\"submit\" value=\"Submit Edits\"/></td>
       </tr>  
-  </form>
-  <?php
-  
-  include 'editbustrip.php'
-  
-  
-  ?>";
+  </form>";
 
 ?>

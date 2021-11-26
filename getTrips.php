@@ -17,7 +17,7 @@ $query = "SELECT * FROM bustrips";
 // if not dead result , print the table
 
 if($result->num_rows>0){
-echo "<form name = \"selectCountry\" method = \"POST\">";
+
    echo "<table id = \"tripstable\">";
 echo "<tr>";
 echo "<th> Select Trip</th>";
@@ -31,9 +31,11 @@ echo "<th>Trip ID</th>";
 	while($row = $result->fetch_assoc()){
      echo "<tr>";
      // add radio button for easier country editting
+     echo "<form name = \"selectCountry\" method = \"POST\">";
      echo "<td style=\"text-align:center\">";
      echo "<input type=\"radio\" id = \"countrySelect\" name =\"countrySelect\" value=". $row['visitedcountry']. " width=\"100\" height=\"100\" onclick\"this.form.submit()\">";
      echo "</td>";
+     echo "</form>";
      echo "<td style=\"text-align:center\">";
      if($row["urlimage"] != NULL){
      echo "<img src=". $row["urlimage"] .">";
@@ -68,7 +70,7 @@ else{
 	echo "Zero results :(";
 } 
 
-echo "</form>";
+
 echo "<?php include 'populateBusTrips.php' ; ?>";
 mysqli_free_result($result);
 mysqli_close($connection);

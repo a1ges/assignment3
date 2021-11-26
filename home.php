@@ -58,7 +58,7 @@ include 'getTrips.php'
         <td style="text-align:center"></td>
         <td style="text-align:center"><input type="text" id="fname" name="fname"></td>"
         <td style="text-align:center"><input type="text" id="fname" name="fname"></td>
-        <td style="text-align:center"><input type="text" id="fname" name="fname" readonly style="background-color: grey;"></td>"
+        <td style="text-align:center"><input type="text" id="countryName" name="countryName" readonly style="background-color: grey;"></td>"
 
         <!-- Note : Make sure start date < end date -->
 
@@ -66,7 +66,7 @@ include 'getTrips.php'
         <td style="text-align:center"><input type="date" id="endDate" name="endDate"></td>"
 
         <td style="text-align:center"><input type="text" id="fname" name="fname"></td>"
-        <td style="text-align:center"><input type="text" id="fname" name="fname"></td>"
+        <td style="text-align:center"><input type="text" id="trpid" name="tripid" readonly style = "background-color: grey;"></td>"
     </tr>
     
 </form>

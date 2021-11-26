@@ -27,8 +27,8 @@ echo "<th>Trip ID</th>";
      echo "<tr>";
      // add radio button for easier country editting
      echo "<td style=\"text-align:center\">";
-     echo "<input type=\"radio\" id = \"countrySelect\" name =\"countrySelect\" value=". $row['visitedcountry']. " />";
-     echo
+     echo "<input type=\"radio\" id = \"countrySelect\" name =\"countrySelect\" value=". $row['visitedcountry']. ">";
+     echo "</td>";
      echo "<td style=\"text-align:center\">";
      echo $row["urlimage"];
      echo "</td>";

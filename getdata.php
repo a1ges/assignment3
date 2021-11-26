@@ -28,13 +28,13 @@ echo "<th>Trip ID</th>";
      echo "<tr>";
      // add radio button for easier country editting
      echo "<td style=\"text-align:center\">";
-     echo "<input type=\"radio\" id = \"countrySelect\" name =\"countrySelect\" value=". $row['visitedcountry']. ">";
+     echo "<input type=\"radio\" id = \"countrySelect\" name =\"countrySelect\" value=". $row['visitedcountry']. " width=\"100\" height=\"100\">";
      echo "</td>";
      echo "<td style=\"text-align:center\">";
      if($row["urlimage"] != NULL){
      echo "<img src=". $row["urlimage"] .">";
      }ELSE{
-      echo "<img src= https://icon-library.com/images/null-icon/null-icon-1.jpg>";
+      echo "<img src= https://icon-library.com/images/null-icon/null-icon-1.jpg> width=\"100\" height=\"100\"";
      }
      echo "</td>";
      echo "<td style=\"text-align:center\">";

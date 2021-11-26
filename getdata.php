@@ -4,17 +4,20 @@
 // Selecting all elements from bustrips   
 $query = "SELECT * FROM bustrips";
 // if Orderasc radio button selected. Order by ascending tripname (work out for country as well)
-   if(isset($_GET['orderasc'])) $query .= " ORDER BY tripname ASC"; 
+   if(isset($_GET['ordering'])){
+        $query .= " ORDER BY tripname ASC";
+        echo "<br> Ascending clicked! <br>"; 
+   };
 // same as previous line but descending
-   if(isset($_GET['orderdesc'])) $query .=" ORDER BY tripname DESC";
+   if(isset($_GET['ordering'])) $query .=" ORDER BY tripname DESC";
    $result = mysqli_query($connection,$query) or die(mysqlerror());
 // if not dead result , print the table
 
 if($result->num_rows>0){
 echo "<table id = \"tripstable\">";
 echo "<tr>";
-echo "<th onclick=\"sortTable(0)\">Trip Name</th>";
-echo "<th onclick=\"sortTable(1)\">Country</th>";
+echo "<th>Trip Name</th>";
+echo "<th>Country</th>";
 echo "<th>Start Date</th>";
 echo "<th>End Date</th>";
 echo "<th>Bus License Number</th>";
@@ -48,5 +51,6 @@ else{
 } 
 
 
-   mysqli_free_result($result);
+mysqli_free_result($result);
+mysqli_close($connection);
 ?>

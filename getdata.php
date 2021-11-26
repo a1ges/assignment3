@@ -16,6 +16,7 @@ $query = "SELECT * FROM bustrips";
 if($result->num_rows>0){
 echo "<table id = \"tripstable\">";
 echo "<tr>";
+echo "<th> Select Trip</th>";
 echo "<th> Trip Image</th>";
 echo "<th>Trip Name</th>";
 echo "<th>Country</th>";

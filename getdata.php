@@ -25,6 +25,10 @@ echo "<th>Bus License Number</th>";
 echo "<th>Trip ID</th>";
 	while($row = $result->fetch_assoc()){
      echo "<tr>";
+     // add radio button for easier country editting
+     echo "<td style=\"text-align:center\">";
+     echo "<input type=\"radio\" id = \"countrySelect\" name =\"countrySelect\" value=". $row['visitedcountry']. " />";
+     echo
      echo "<td style=\"text-align:center\">";
      echo $row["urlimage"];
      echo "</td>";

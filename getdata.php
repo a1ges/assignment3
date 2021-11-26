@@ -34,7 +34,7 @@ echo "<th>Trip ID</th>";
      if($row["urlimage"] != NULL){
      echo "<img src=". $row["urlimage"] .">";
      }ELSE{
-      echo "<img src= https://icon-library.com/images/null-icon/null-icon-1.jpg> width=\"100\" height=\"100\"";
+      echo "<img src= https://icon-library.com/images/null-icon/null-icon-1.jpg width=\"100\" height=\"100\"> ";
      }
      echo "</td>";
      echo "<td style=\"text-align:center\">";

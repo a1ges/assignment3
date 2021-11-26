@@ -19,6 +19,7 @@ $query = "SELECT * FROM bustrips";
 if($result->num_rows>0){
    echo " <script type=\"text/javascript\">
    var e = document.getElementById('selectCountry'); e.action='populateBusTrips.php'; e.submit();
+   echo \" Hello world\";
    </script>
 ";
    echo "<form name = \"selectCountry\" method = \"POST\">";

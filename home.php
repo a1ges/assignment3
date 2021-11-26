@@ -41,7 +41,7 @@ include 'getTrips.php'
 
 <!-- Form Segment , takes values from radio button in previous form (look for countryvisisted) and populate texts boxes to be editted once the "Edit" Button is clicked -->
 
-<form>
+<form name = "editBusTripForm" method = "POST">
     <!-- Headings for row of inputs (Some edittable, some not)-->
     <tr>    
         <th></th>
@@ -54,22 +54,28 @@ include 'getTrips.php'
         <th>Trip ID</th>"
     </tr>
     <tr>    
-
+        <!-- First table entry used to space out inputs for aesthetic reasons. -->
         <td style="text-align:center"></td>
-        <td style="text-align:center"><input type="text" id="fname" name="fname"></td>"
-        <td style="text-align:center"><input type="text" id="fname" name="fname"></td>
-        <td style="text-align:center"><input type="text" id="countryName" name="countryName" readonly style="background-color: grey;"></td>"
+        
+        <td style="text-align:center"><input type="text" id="urlimage" name="urlimage"></td>"
+        <td style="text-align:center"><input type="text" id="tripname" name="tripname"></td>
+        <td style="text-align:center"><input type="text" id="visitedcountry" name="visitedcountry" readonly style="background-color: grey;"></td>"
 
         <!-- Note : Make sure start date < end date -->
 
         <td style="text-align:center"><input type="date" id="startdate" name="startdate"></td>
-        <td style="text-align:center"><input type="date" id="endDate" name="endDate"></td>"
+        <td style="text-align:center"><input type="date" id="enddate" name="enddate"></td>"
 
-        <td style="text-align:center"><input type="text" id="fname" name="fname"></td>"
+        <td style="text-align:center"><input type="text" id="licenseplate" name="licenseplate"></td>"
         <td style="text-align:center"><input type="text" id="trpid" name="tripid" readonly style = "background-color: grey;"></td>"
-    </tr>
-    
+    </tr>  
 </form>
+<?php
+
+include 'editbustrip.php'
+
+
+?>
 </body>
 </html>
 

@@ -69,7 +69,7 @@ else{
 } 
 
 echo "</form>";
-include 'populateBusTrips.php';
+echo "<?php include 'populateBusTrips.php' ; ?>";
 mysqli_free_result($result);
 mysqli_close($connection);
 ?>

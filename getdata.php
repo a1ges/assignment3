@@ -4,11 +4,12 @@ include 'connectdb.php';
 // Selecting all elements from bustrips   
 $query = "SELECT * FROM bustrips";
 // if Orderasc radio button selected. Order by ascending tripname (work out for country as well)
-   $input = $_POST['ordering'];
-   if($input == "orderasc") $query .= " ORDER BY ". $_POST[tripnameOcountry]. " ASC";
+   $ordering = $_POST['ordering'];
+   $tripOrCountryOrdering = $_POST['tripnameOcountry'];
+   if($ordering == "orderasc") $query .= " ORDER BY ". $tripOrCountryOrdering . " ASC";
 
 // same as previous line but descending
-   if($input == "orderdesc") $query .=" ORDER BY ". $_POST[tripnameOcountry]. " DESC";
+   if($ordering == "orderdesc") $query .=" ORDER BY ". $tripOrCountryOrdering . " DESC";
    $result = mysqli_query($connection,$query) or die(mysqlerror());
 // if not dead result , print the table
 

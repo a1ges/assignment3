@@ -32,7 +32,7 @@ echo "<th>Trip ID</th>";
      echo "<tr>";
      // add radio button for easier country editting
      echo "<td style=\"text-align:center\">";
-     echo "<input type=\"radio\" id = \"countrySelect\" name =\"countrySelect\" value=". $row['visitedcountry']. " width=\"100\" height=\"100\">";
+     echo "<input type=\"radio\" id = \"countrySelect\" name =\"countrySelect\" value=". $row['visitedcountry']. " width=\"100\" height=\"100\" onclick\"this.form.submit()\">";
      echo "</td>";
      echo "<td style=\"text-align:center\">";
      if($row["urlimage"] != NULL){

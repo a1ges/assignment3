@@ -44,7 +44,7 @@ include 'getTrips.php'
 <form>
     <!-- Headings for row of inputs (Some edittable, some not)-->
     <tr>    
-        <th>\t</th>
+        <th></th>
         <th>Trip Image</th>
         <th>Trip Name</th>
         <th>Country</th>"

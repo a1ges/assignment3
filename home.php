@@ -59,8 +59,8 @@ include 'getTrips.php'
         <td style="text-align:center"><input type="text" id="fname" name="fname"></td>"
         <td style="text-align:center"><input type="text" id="fname" name="fname"></td>
         <td style="text-align:center"><input type="text" id="fname" name="fname"></td>"
-        <td style="text-align:center"><input type="text" id="fname" name="fname"></td>
-        <td style="text-align:center"><input type="text" id="fname" name="fname"></td>"
+        <td style="text-align:center"><input type="date" id="startdate" name="startdate"></td>
+        <td style="text-align:center"><input type="date" id="endDate" name="endDate"></td>"
         <td style="text-align:center"><input type="text" id="fname" name="fname"></td>"
         <td style="text-align:center"><input type="text" id="fname" name="fname"></td>"
     </tr>

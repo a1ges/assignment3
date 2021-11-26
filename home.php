@@ -28,7 +28,7 @@ include 'connectdb.php';
 <br><input type="submit" value="submit"/>
 </form>
 <?php
-include 'getdata.php'
+include 'getTrips.php'
 
 ?>
 

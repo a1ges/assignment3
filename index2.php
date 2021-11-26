@@ -24,7 +24,7 @@ $query = "SELECT * FROM bustrips";
    if(isset($_GET['ordering'])){
         $query .= " ORDER BY tripname ASC";
         echo "Ascending clicked!"; 
-   }
+   };
 // same as previous line but descending
    if(isset($_GET['ordering'])) $query .=" ORDER BY tripname DESC";
    $result = mysqli_query($connection,$query) or die(mysqlerror());

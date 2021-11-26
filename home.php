@@ -44,6 +44,8 @@ include 'getTrips.php'
 <form>
     <!-- Headings for row of inputs (Some edittable, some not)-->
     <tr>    
+        <th>\t</th>
+        <th>Trip Image</th>
         <th>Trip Name</th>
         <th>Country</th>"
         <th>Start Date</th>
@@ -52,6 +54,7 @@ include 'getTrips.php'
         <th>Trip ID</th>"
     </tr>
     <tr>    
+
         <td style="text-align:center"><input type="text" id="fname" name="fname"></td>
         <td style="text-align:center"><input type="text" id="fname" name="fname"></td>"
         <td style="text-align:center"><input type="text" id="fname" name="fname"></td>

@@ -52,12 +52,12 @@ include 'getTrips.php'
         <th>Trip ID</th>"
     </tr>
     <tr>    
-        <td><input type="text" id="fname" name="fname"></td>
-        <td><input type="text" id="fname" name="fname"></td>"
-        <td><input type="text" id="fname" name="fname"></td>
-        <td><input type="text" id="fname" name="fname"></td>"
-        <td><input type="text" id="fname" name="fname"></td>
-        <td><input type="text" id="fname" name="fname"></td>"
+        <td style="text-align:center"><input type="text" id="fname" name="fname"></td>
+        <td style="text-align:center"><input type="text" id="fname" name="fname"></td>"
+        <td style="text-align:center"><input type="text" id="fname" name="fname"></td>
+        <td style="text-align:center"><input type="text" id="fname" name="fname"></td>"
+        <td style="text-align:center"><input type="text" id="fname" name="fname"></td>
+        <td style="text-align:center"><input type="text" id="fname" name="fname"></td>"
     </tr>
     
 </form>

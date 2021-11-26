@@ -42,6 +42,9 @@ echo "<th>Trip ID</th>";
      echo "<td style=\"text-align:center\">";
      echo $row["tripid"];
      echo "</td>";
+     echo "<td style=\"text-align:center\">";
+     echo $row["urlimage"];
+     echo "</td>";
      echo "</tr>";	
 }
 

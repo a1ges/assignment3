@@ -55,7 +55,7 @@ include 'getTrips.php'
     </tr>
     <tr>    
 
-        <td style="text-align:center"><input type="text" id="fname" name="fname"></td>
+        <td style="text-align:center"></td>
         <td style="text-align:center"><input type="text" id="fname" name="fname"></td>"
         <td style="text-align:center"><input type="text" id="fname" name="fname"></td>
         <td style="text-align:center"><input type="text" id="fname" name="fname"></td>"

@@ -16,6 +16,7 @@ $query = "SELECT * FROM bustrips";
 if($result->num_rows>0){
 echo "<table id = \"tripstable\">";
 echo "<tr>";
+echo "<th> Trip Image</th>";
 echo "<th>Trip Name</th>";
 echo "<th>Country</th>";
 echo "<th>Start Date</th>";
@@ -24,6 +25,9 @@ echo "<th>Bus License Number</th>";
 echo "<th>Trip ID</th>";
 	while($row = $result->fetch_assoc()){
      echo "<tr>";
+     echo "<td style=\"text-align:center\">";
+     echo $row["urlimage"];
+     echo "</td>";
      echo "<td style=\"text-align:center\">";
      echo $row["tripname"];
      echo "</td>";
@@ -42,9 +46,7 @@ echo "<th>Trip ID</th>";
      echo "<td style=\"text-align:center\">";
      echo $row["tripid"];
      echo "</td>";
-     echo "<td style=\"text-align:center\">";
-     echo $row["urlimage"];
-     echo "</td>";
+     
      echo "</tr>";	
 }
 

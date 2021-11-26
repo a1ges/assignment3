@@ -32,7 +32,7 @@ include 'connectdb.php';
 <label for="orderasc"> Order by: Trip names </label>  </td></tr>
 
 <!--"Submit" button -->
-<br><input type="submit" value="submit"/>
+<br><input type="submit" value="Order Table"/>
 </form>
 <!--Call upon getTrips using radio button information -->
 <?php
@@ -68,7 +68,7 @@ include 'getTrips.php'
 
         <td style="text-align:center"><input type="text" id="licenseplate" name="licenseplate"></td>"
         <td style="text-align:center"><input type="text" id="trpid" name="tripid" readonly style = "background-color: grey;"></td>"
-        <td style="text-align:center"><input type="submit" value="submit"/></td>
+        <td style="text-align:center"><input type="submit" value="Submit Edits"/></td>
     </tr>  
 </form>
 <?php

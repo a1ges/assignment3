@@ -22,7 +22,7 @@ include 'connectdb.php';
 <label for="orderasc"> Order by: Country names </label>  </td></tr>
 
 <br><tr> <td style="text-align:center"><input type="radio" id = "orderdesc" name="ordering"  value="orderdesc">
-<label for="orderdesc"> Descending Order </label><br></td>
+<label for="orderdesc"> Descending Order </label></td>
 <td style="text-align:center"><input type="radio" id = "tripnameOcountry" name ="tripnameOcountry"  value="tripname" >
 <label for="orderasc"> Order by: Trip names </label>  </td></tr>
 <br><input type="submit" value="submit"/>

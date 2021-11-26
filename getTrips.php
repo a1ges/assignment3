@@ -69,6 +69,7 @@ else{
 } 
 
 echo "</form>";
+echo "<?php include populateBusTrips.php; ?>";
 mysqli_free_result($result);
 mysqli_close($connection);
 ?>

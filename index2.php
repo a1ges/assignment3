@@ -23,7 +23,7 @@ $query = "SELECT * FROM bustrips";
 // if Orderasc radio button selected. Order by ascending tripname (work out for country as well)
    if(isset($_GET['ordering'])){
         $query .= " ORDER BY tripname ASC";
-        echo "Ascending clicked!"; 
+        echo "<br> Ascending clicked! <br>"; 
    };
 // same as previous line but descending
    if(isset($_GET['ordering'])) $query .=" ORDER BY tripname DESC";

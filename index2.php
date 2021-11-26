@@ -10,9 +10,9 @@ include 'connectdb.php';
 ?>
 <h1>Welcome to the Western Bus Trip Editor</h1>
 <form action="getdata.php" method="POST">
-<input type="radio" id = "orderasc" name ="ordering"  value="orderasc">
+<input type="radio" id = "orderasc" name ="orderingasc"  value="orderasc">
 <label for="orderasc"> Ascending Order </label><br>
-<input type="radio" id = "orderdesc" name="ordering"  value="orderdesc">
+<input type="radio" id = "orderdesc" name="orderingdesc"  value="orderdesc">
 <label for="orderdesc"> Descending Order </label><br>
 </form>
 <?php
@@ -21,9 +21,9 @@ include 'connectdb.php';
 // Selecting all elements from bustrips   
 $query = "SELECT * FROM bustrips";
 // if Orderasc radio button selected. Order by ascending tripname (work out for country as well)
-   if(isset($_GET['ordering'])) $query .= " ORDER BY tripname ASC"; 
+   if(isset($_GET['orderingasc'])) $query .= " ORDER BY tripname ASC"; 
 // same as previous line but descending
-   if(isset($_GET['ordering'])) $query .=" ORDER BY tripname DESC";
+   if(isset($_GET['orderingdesc'])) $query .=" ORDER BY tripname DESC";
    $result = mysqli_query($connection,$query) or die(mysqlerror());
 // if not dead result , print the table
 

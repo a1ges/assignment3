@@ -18,14 +18,14 @@ include 'connectdb.php';
 <form name = "radioOptions" method="POST">
 <tr> <td style="text-align:center"><input type="radio" id = "orderasc" name ="ordering"  value="orderasc" >
 <label for="orderasc"> Ascending Order </label>  </td>
-<td style="text-align:center">"<input type="radio" id = "tripnameOcountry" name ="tripnameOcountry"  value="country" >
+<td style="text-align:center"><input type="radio" id = "tripnameOcountry" name ="tripnameOcountry"  value="country" >
 <label for="orderasc"> Order by: Country names </label>  </td></tr>
 
 <br><tr> <td style="text-align:center"><input type="radio" id = "orderdesc" name="ordering"  value="orderdesc">
 <label for="orderdesc"> Descending Order </label><br></td>
-<td style="text-align:center">"<input type="radio" id = "tripnameOcountry" name ="tripnameOcountry"  value="tripname" >
+<td style="text-align:center"><input type="radio" id = "tripnameOcountry" name ="tripnameOcountry"  value="tripname" >
 <label for="orderasc"> Order by: Trip names </label>  </td></tr>
-<input type="submit" value="submit"/>
+<br><input type="submit" value="submit"/>
 </form>
 <?php
 include 'getdata.php'

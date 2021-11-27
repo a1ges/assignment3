@@ -55,7 +55,6 @@ include 'getTrips.php';
         <th>Trip Name</th>
         <th>Start Date</th>
         <th>End Date</th>
-        <th>Bus License Number</th>
         <th>Trip ID</th>
     </tr>
     <tr>    
@@ -70,7 +69,6 @@ include 'getTrips.php';
         <td style="text-align:center"><input type="date" id="startdate" name="startdate"></td>
         <td style="text-align:center"><input type="date" id="enddate" name="enddate"></td>
 
-        <td style="text-align:center"><input type="text" id="licenseplate" name="licenseplate"></td>
         <td style="text-align:center"><select name="tripid" id="tripid">
         <?php
 

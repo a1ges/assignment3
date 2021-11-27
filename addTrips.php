@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $visitedcountry = $_POST['country'];
     $startdate = $_POST['startdate'];
     $enddate = $_POST['enddate'];
-    $licenseplate = $_POST['buslicense'];
+    $licenseplate = $_POST['busid'];
     $tripid = $_POST['tripid'];
     // flip dates if it start date is after end date
     if($startdate > $enddate){

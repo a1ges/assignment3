@@ -53,7 +53,6 @@ include 'getTrips.php';
 
         <th>Trip Image</th>
         <th>Trip Name</th>
-        <th>Country</th>
         <th>Start Date</th>
         <th>End Date</th>
         <th>Bus License Number</th>

@@ -1,7 +1,7 @@
 <?php
 // get values from textboxes
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (isset($_POST['submitEdit'])) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submitEdit'])) {
+    
         include 'connectdb.php';
 
 $urlimage = $_POST['urlimage'];
@@ -41,6 +41,7 @@ $preceeded = false;
     }
     $query1 .= " WHERE tripid =". $tripid;
     // debugging : echo "<h1>" . $query1 . "</h1>";
+    if()
     $result=mysqli_query($connection,$query1) or die(mysqlerror());;
     if (!$result) {
         die();

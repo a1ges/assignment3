@@ -81,7 +81,7 @@ include 'getTrips.php';
                 echo "<option value =". $row['tripid'].">". $row['tripid'] . "</option>";
             }
         ?> </select>
-        <td style="text-align:center"><input type="submit" name="submitEdit" value="Submit Edits"/></td>
+        <td style="text-align:center"><input type="submit" name="submitEdit" id = "submitEdit" value="Submit Edits"/></td>
     </tr>
     <?php
     if(isset($_POST['submitEdit']) ){

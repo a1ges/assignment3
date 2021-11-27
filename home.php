@@ -50,7 +50,7 @@ include 'getTrips.php';
 <form name = "editBusTripForm" method = "POST">
     <!-- Headings for row of inputs (Some edittable, some not)-->
     <tr>    
-        <th></th>
+
         <th>Trip Image</th>
         <th>Trip Name</th>
         <th>Country</th>

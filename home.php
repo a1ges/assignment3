@@ -46,7 +46,7 @@ include 'getTrips.php';
 
 
 <!-- Form Segment , takes values from radio button in previous form (look for countryvisisted) and populate texts boxes to be editted once the "Edit" Button is clicked -->
-
+<h2> Edit a Bus Trip </h2>
 <form name = "editBusTripForm" method = "POST">
     <!-- Headings for row of inputs (Some edittable, some not)-->
     <table id = "editTable">
@@ -89,7 +89,7 @@ include 'getTrips.php';
     ?>  
    </table>
 </form>
-
+<h2> Add a Bus Trip </h2>
 <form name = "addBusTrip" method = "POST">
     <!-- Headings for row of inputs (Some edittable, some not)-->
     <table id = "addTrip">

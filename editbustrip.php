@@ -1,5 +1,5 @@
 <?php
-
+include 'connectdb.php';
 // get values from textboxes
 
 $urlimage = $_POST['urlimage'];
@@ -44,7 +44,7 @@ $preceeded = false;
         die();
     }
     else{
-        echo "<script>alert('Edit Complete');</script>";
+        //echo "<script>alert('Edit Complete');</script>";
     
 }
 mysqli_close($connection);

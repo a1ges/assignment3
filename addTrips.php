@@ -14,10 +14,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $startdate = $enddate;
         $enddate = $temp;
     }
-    if( $tripname == NULL || $visitedcountry == NULL || $startdate == NULL || $enddate == NULL || $licenseplate == NULL){
-       echo " <script>alert('Please enter all asteriksed values before submitting a bustrip'); ";
-    }
-            else{
+  //  if( $tripname == NULL || $visitedcountry == NULL || $startdate == NULL || $enddate == NULL || $licenseplate == NULL){
+    //   echo " <script>alert('Please enter all asteriksed values before submitting a bustrip'); ";
+    //}
+      //      else{
 
                     // the assumption is that all data besides the url are guarenteed so the sql here is trivial
                     $query = "INSERT INTO bustrips VALUES ('" . $tripid. "','" . $tripname . "','" . $startdate . "','" . $enddate . "','" . $visitedcountry . "','" . $licenseplate . "','" . $urlimage . "')"  ;
@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             if (!$result) {
                                 die("<script>alert('Invalid query please try again'); </script>");
                             }else{echo "<script>alert('Trip successfully inserted'); </script>";}
-        }
+        //}
 
 }
 

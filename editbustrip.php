@@ -11,17 +11,17 @@ $tripid = $_POST['tripid'];
 $preceeded = false;
     echo "<h1>". $tripid. "</h1>";
     $query1= "UPDATE bustrips SET " ;// where tripid = ". $tripid ;\
-    if($tripname == NULL){
+    if($tripname != NULL){
         $query1 .=  "tripname =\'".$tripname."\'";
         $preceeded =true;
     }
-    if($startdate == NULL){
+    if($startdate != NULL){
         if($preceeded == true){ $query1 .= ", ";}
         $query1 .= "startdate =". $startdate ." , enddate =". $enddate . "\'";
         $preceeded == true;
         
     }
-    if($enddate == NULL){
+    if($enddate != NULL){
         if($preceeded = true){ $query1 .= ", ";}
 
         $end = 'enddate';

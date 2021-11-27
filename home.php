@@ -211,7 +211,13 @@ include 'getTrips.php';
         <td style="text-align:center"><input type="submit" name="submitBook" id="submitBook" value="Book your trip!"/></td>
     </tr>
     <?php
+         
+         if (isset($_GET['submitBook'])) {
+            echo "Button Pressed";    
             include "addTrips.php";
+        
+          } 
+         
     ?>
    </table>
 </form>

@@ -38,7 +38,8 @@ include 'connectdb.php';
 <!--"Submit" button -->
 <br><input type="submit" value="Order Table"/>
 <?php
-include 'getTrips.php'
+include 'getTrips.php';
+include 'deleteTrips.php' ;
 ?>
 </form>
 <!--Call upon getTrips using radio button information -->

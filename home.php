@@ -169,7 +169,53 @@ include 'getTrips.php';
         ?>
 </form>
 
+<form name = "addBooking" method = "POST">
+    <!-- Headings for row of inputs (Some edittable, some not)-->
+    <table id = "addTrip">
+    <tr>    
+        <th>Passenger ID</th>
+        <th>Trip ID</th>
+        <th>Price of Trip</th>
 
+    </tr>
+    <tr>    
+        <!--  -->
+        
+    
+        <td style="text-align:center"><select name="passengerid" id="passengerid">
+        <?php
+
+            include 'connectdb.php';
+            $query = "SELECT * FROM passenger";
+            // get trip ids
+            $result = mysqli_query($connection,$query) or die(mysqlerror());
+            // if not dead result , print the table
+            while($row = $result->fetch_assoc()){
+                echo "<option value =". $row['passengerid'].">". $row['passengerid'] . " - " . $row['firstname'] . " " . $row['lastname'] . "</option>";
+            }
+        ?> </select>
+        <td style="text-align:center"><input type="text" id="tripid" name="tripid"></td>
+        <td style="text-align:center"><input type="text" id="tripname" name="tripname"></td>
+        <td style="text-align:center"><select name="busid" id="busid">
+        <?php
+
+            include 'connectdb.php';
+            $query = "SELECT * FROM buses";
+            // get trip ids
+            $result = mysqli_query($connection,$query) or die(mysqlerror());
+            // if not dead result , print the table
+            while($row = $result->fetch_assoc()){
+                echo "<option value =". $row['licenseplate'].">". $row['licenseplate'] . "</option>";
+            }
+        ?> </select>
+        <td style="text-align:center"><input name="tripid" id="tripid"></td>
+        <td style="text-align:center"><input type="submit" name="submitAdd" value="Submit New Trip"/></td>
+    </tr>
+    <?php
+            include "addTrips.php";
+    ?>
+   </table>
+</form>
 
 
 </body>

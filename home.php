@@ -39,7 +39,6 @@ include 'connectdb.php';
 <br><input type="submit" value="Order Table"/>
 <?php
 include 'getTrips.php';
-
 ?>
 </form>
 <!--Call upon getTrips using radio button information -->
@@ -85,7 +84,9 @@ include 'getTrips.php';
         <td style="text-align:center"><input type="submit" name="submitEdit" value="Submit Edits"/></td>
     </tr>
     <?php
+    if(isset($_POST['submitEdit']) ){
     include 'editbustrip.php';
+    }
     ?>  
    </table>
 </form>

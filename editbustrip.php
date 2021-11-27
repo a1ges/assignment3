@@ -1,8 +1,9 @@
 <?php
-include 'connectdb.php';
 // get values from textboxes
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['submitEdit'])) {
+        include 'connectdb.php';
+
 $urlimage = $_POST['urlimage'];
 $tripname = $_POST['tripname']; // countryvisited
 $startdate = $_POST['startdate'];
@@ -50,5 +51,5 @@ $preceeded = false;
 }
 mysqli_close($connection);
 }
-}
+
 ?>

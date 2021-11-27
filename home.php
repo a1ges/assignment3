@@ -111,7 +111,7 @@ include 'getTrips.php';
         <td style="text-align:center"><input type="text" id="country" name="country"></td>
         <td style="text-align:center"><input type="date" id="startdate" name="startdate"></td>
         <td style="text-align:center"><input type="date" id="enddate" name="enddate"></td>
-        <td style="text-align:center"><select name="tripid" id="tripid">
+        <td style="text-align:center"><select name="busid" id="busid">
         <?php
 
             include 'connectdb.php';

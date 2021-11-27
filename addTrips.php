@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $result=mysqli_query($connection,$query);
                             if (!$result) {
                                 die("<script>alert('Invalid query please try again'); window.location.reload();</script>");
-                            }
+                            }else{echo "<script>alert('Trip successfully inserted'); window.location.reload();</script>";}
         }
 
 }

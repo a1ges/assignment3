@@ -61,7 +61,7 @@ include 'getTrips.php';
     </tr>
     <tr>    
         <!-- First table entry used to space out inputs for aesthetic reasons. -->
-        <td style="text-align:center"></td>
+        <td style="text-align:center"><input type="submit" name="populateEdit" value="Populate"/></td>
         
         <td style="text-align:center"><input type="text" id="urlimage" name="urlimage"></td>
         <td style="text-align:center"><input type="text" id="tripname" name="tripname"></td>
@@ -74,7 +74,7 @@ include 'getTrips.php';
 
         <td style="text-align:center"><input type="text" id="licenseplate" name="licenseplate"></td>
         <td style="text-align:center"><input type="text" id="trpid" name="tripid" readonly style = "background-color: grey;"></td>
-        <td style="text-align:center"><input type="submit" value="Submit Edits"/></td>
+        <td style="text-align:center"><input type="submit" name="submitEdit" value="Submit Edits"/></td>
     </tr>  
     <?php
         include 'editbustrip.php'

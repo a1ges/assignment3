@@ -194,20 +194,20 @@ include 'getTrips.php';
                 echo "<option value =". $row['passengerid'].">". $row['passengerid'] . " - " . $row['firstname'] . " " . $row['lastname'] . "</option>";
             }
         ?> </select>
-        <td style="text-align:center"><input type="text" id="tripid" name="tripid"></td>
-        <td style="text-align:center"><input type="text" id="tripname" name="tripname"></td>
-        <td style="text-align:center"><select name="busid" id="busid">
+        <td style="text-align:center"><select name="tripid" id="tripid">
         <?php
 
             include 'connectdb.php';
-            $query = "SELECT * FROM buses";
+            $query = "SELECT * FROM bustrips";
             // get trip ids
             $result = mysqli_query($connection,$query) or die(mysqlerror());
             // if not dead result , print the table
             while($row = $result->fetch_assoc()){
-                echo "<option value =". $row['licenseplate'].">". $row['licenseplate'] . "</option>";
+                echo "<option value =". $row['tripid'].">". $row['tripid'] . " - " . $row['tripname']. "</option>";
             }
         ?> </select>
+        <td style="text-align:center"><input type="text" id="tripname" name="tripname"></td>
+
         <td style="text-align:center"><input name="tripid" id="tripid"></td>
         <td style="text-align:center"><input type="submit" name="submitAdd" value="Submit New Trip"/></td>
     </tr>

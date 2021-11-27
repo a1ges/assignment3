@@ -8,6 +8,10 @@
         var formObject = document.forms['radioOptions']
         formObject.submit();
     }
+
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
     </script>
 </head>
 <body>

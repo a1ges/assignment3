@@ -66,7 +66,7 @@ echo "<th>Trip ID</th>";
      
      echo "</tr>";	
 }
-echo "<td style=\"text-align:center\"><input type=\"submit\" name = \"delete\" value=\"DButtonPressed\" onclick=\"return confirm('Are you sure?');\"/></td>";
+echo "<td style=\"text-align:center\"><input type=\"submit\" name = \"delete\" value=\"Delete Selected\" onclick=\"return confirm('Are you sure?');\"/></td>";
 echo "</form>";
 }
 else{

@@ -72,7 +72,7 @@ echo "</form>";
 else{
 	echo "Zero results :(";
 } 
-
+include 'deleteTrips.php' ;
 
 
 mysqli_free_result($result);

@@ -22,13 +22,13 @@ $preceeded = false;
     }
     if($startdate != NULL){
         if($preceeded == true){ $query1 .= ", ";}
-        $query1 .= "startdate =". $startdate ;
+        $query1 .= "startdate ='". $startdate. "'" ;
         $preceeded == true;
         
     }
     if($enddate != NULL){
         if($preceeded = true){ $query1 .= ", ";}
-        $query1 .= "enddate =". $enddate . "'";
+        $query1 .= "enddate ='". $enddate . "'";
         $preceeded == true;
     
     }

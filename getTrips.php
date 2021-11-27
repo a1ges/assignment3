@@ -79,5 +79,4 @@ else{
 include 'deleteTrips.php' ;
 
 
-mysqli_close($connection);
 ?>

@@ -48,5 +48,5 @@ $preceeded = false;
     
 }
 
-mysqli_close($connection);
+
 ?>

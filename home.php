@@ -118,9 +118,6 @@ include 'getTrips.php';
         <td style="text-align:center"><input name="tripid" id="tripid"></td>
         <td style="text-align:center"><input type="submit" name="submitEdit" value="Submit Edits"/></td>
     </tr>
-    <?php
-    include 'addTrips.php';
-    ?>  
    </table>
 </form>
 

@@ -2,7 +2,7 @@
    include 'connectdb.php';
 
    $delete= $_POST["delete"];
-   $tripid = $_POST["tripid"];
+   $tripid = $_POST["tripid_"];
   
 
   

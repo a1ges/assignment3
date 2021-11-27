@@ -1,13 +1,13 @@
 <?php
    include 'connectdb.php';
-
+if(isset(_POST['selectCountry'])){
    $delete= $_POST["delete"];
-   $tripid = $_POST["tripid_"];
+   $tripid_ = $_POST["tripid"];
   
 
   
-   if($tripid != NULL && isset($tripid)){
-   $query1= "DELETE FROM bustrips where tripid = ". $tripid ;
+   if($tripid_ != NULL && isset($tripid_)){
+   $query1= "DELETE FROM bustrips where tripid = ". $tripid_ ;
    $result=mysqli_query($connection,$query1);
    if (!$result) {
     if(isset($delete)){
@@ -16,6 +16,7 @@
     
    }
   
+}
 }
 
 /*

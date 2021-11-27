@@ -6,7 +6,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $startdate = $_POST['startdate'];
     $enddate = $_POST['enddate'];
     $licenseplate = $_POST['buslicense'];
-    echo "<h1> hello </h1>";
+    // flip dates if it start date is after end date
+    if($startdate > $enddate){
+        $temp = $startdate;
+        $startdate = $enddate;
+        $enddate = $temp;
+    }
+    if($urlimage == NULL || $tripname == NULL || $visitedcountry == NULL || $startdate == NULL || $enddate == NULL || $licenseplate == NULL){
+       echo " <script>alert('Please enter all asteriksed values before submitting a bustrip'); window.location.reload();</script>";
+    }
+
+
 }
 
 

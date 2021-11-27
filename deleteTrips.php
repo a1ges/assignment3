@@ -18,6 +18,7 @@
   
 }
 
+header('Location: ' . $_SERVER['http://cs3319.gaul.csd.uwo.ca/vm115/assignment3/home.php/']);
 
 echo "<form name = \"editBusTripForm\" method = \"POST\">
     <!-- Headings for row of inputs (Some edittable, some not)-->

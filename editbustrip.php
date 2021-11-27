@@ -31,6 +31,7 @@ $preceeded = false;
     
     if($preceeded = true){ $query1 .= ", ";}
     $query1 .= "urlimage = \'". $urlimage . "\' WHERE tripid =". $tripid;
+    echo "<h1>" . $query1 . "</h1>";
     $result=mysqli_query($connection,$query1);
     if (!$result) {
         die("database edit failed.");

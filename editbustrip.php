@@ -42,7 +42,7 @@ $preceeded = false;
     $query1 .= " WHERE tripid =". $tripid;
     // debugging : echo "<h1>" . $query1 . "</h1>";
     
-    $result=mysqli_query($connection,$query1) or die("Something went wrong!");;
+    $result=mysqli_query($connection,$query1) or die("<h1>Something went wrong! Please refresh your page! </h1>");;
     if (!$result) {
         die();
     }

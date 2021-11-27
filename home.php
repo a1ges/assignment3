@@ -1,4 +1,4 @@
-<DOCTYPE html>
+CTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -91,6 +91,10 @@ include 'getTrips.php';
    </table>
 </form>
 <h2> Add a Bus Trip </h2>
+
+ <!--Form for adding bustrips given via user input -->
+
+
 <form name = "addBusTrip" method = "POST">
     <!-- Headings for row of inputs (Some edittable, some not)-->
     <table id = "addTrip">
@@ -132,7 +136,44 @@ include 'getTrips.php';
    </table>
 </form>
 
+<!--Form for viewing bustrips given a country from the drop down list -->
+<form name = "viewCountry" method="GET">
+<h2>Show Bustrips of given country </h2>
+<tr>
+ <td style="text-align:center"><select name="countryName" id="countryName">
+        <?php
+
+            include 'connectdb.php';
+            $query = "SELECT visitedcountry FROM bustrips";
+            // get trip ids
+            $result = mysqli_query($connection,$query) or die(mysqlerror());
+            // if not dead result , print the table
+            while($row = $result->fetch_assoc()){
+                echo "<option value =". $row['visitedcountry'].">". $row['visitedcountry'] . "</option>";
+            }
+        ?> </select>
+</td>
+<td style="text-align:center"><input type="submit" name="submitCountry" id="submitCountry" value="Query Country"/></td>
+	
+        <?php
+
+  // Something posted
+
+  if (isset($_GET['submitCountry'])) {
+	echo "Button Pressed";    
+          include 'viewCountry.php';
+
+  } 
+
+
+        ?>
+</form>
+
+
+
 
 </body>
 </html>
+
+
 

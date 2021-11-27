@@ -74,7 +74,7 @@ else{
 } 
 
 
-echo "<?php include 'deleteTrips.php' ; ?>";
+include 'deleteTrips.php' ;
 mysqli_free_result($result);
 mysqli_close($connection);
 ?>

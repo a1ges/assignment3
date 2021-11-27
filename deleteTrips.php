@@ -3,7 +3,7 @@
 
    $delete= $_POST["delete"];
    $tripid = $_POST["tripid"];
-   echo $tripid . $delete;
+   echo "<h1> ". $tripid . $delete . "</h1>";
 /*
   
    if($tripid != NULL){

@@ -6,9 +6,9 @@ $query = "SELECT * FROM bustrips";
 
     $populate= $_POST["populateEdit"];
     $tripid = $_POST["tripid"];
-
-    echo "<h1>" .$populate . " " . $tripid. "</h1>";
-
+    if(isset($populate)){
+        echo "<h1>" .$populate . " " . $tripid. "</h1>";
+    }
 
 
 

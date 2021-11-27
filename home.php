@@ -65,7 +65,7 @@ include 'getTrips.php';
         
         <td style="text-align:center"><input type="text" id="urlimage" name="urlimage"></td>
         <td style="text-align:center"><input type="text" id="tripname" name="tripname"></td>
-        <td style="text-align:center"><input type="text" id="visitedcountry" name="visitedcountry" readonly style="background-color: grey;"></td>
+
 
         <!-- Note : Make sure start date < end date -->
 
@@ -88,7 +88,6 @@ include 'getTrips.php';
         <td style="text-align:center"><input type="submit" name="submitEdit" value="Submit Edits"/></td>
     </tr>
     <?php
-    include 'populateTripid.php';
     include 'editbustrip.php';
     ?>  
    

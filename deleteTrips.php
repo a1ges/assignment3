@@ -7,7 +7,8 @@ if(isset(_POST['selectCountry'])){
 
   
    if($tripid_ != NULL && isset($tripid_)){
-   $query1= "DELETE FROM bustrips where tripid = ". $tripid_ ;
+   $query1= "DELETE FROM bustrips where tripid = '". $tripid_ . "'" ;
+   echo "<h1>" $query1 "</h1>";
    $result=mysqli_query($connection,$query1);
    if (!$result) {
     if(isset($delete)){

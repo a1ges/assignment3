@@ -18,7 +18,7 @@ $query = "SELECT * FROM bustrips";
 
 if($result->num_rows>0){
    echo "<br><h2> Current Trips: </h2>";
-   echo "<form name = \"selectCountry\" method = \"POST\">";
+   echo "<form name = \"selectCountry\" id = \"selectCountry\"  method = \"POST\">";
 
 
    echo "<table id = \"tripstable\">";

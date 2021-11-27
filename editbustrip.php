@@ -41,7 +41,7 @@ $preceeded = false;
     }
     $query1 .= " WHERE tripid =". $tripid;
     // debugging : echo "<h1>" . $query1 . "</h1>";
-    if()
+    
     $result=mysqli_query($connection,$query1) or die(mysqlerror());;
     if (!$result) {
         die();

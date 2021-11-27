@@ -40,7 +40,7 @@ $preceeded = false;
     $query1 .= " WHERE tripid =". $tripid;
     echo "<h1>" . $query1 . "</h1>";
     $result=mysqli_query($connection,$query1);
-    if (!$result && !isset($_POST['submitEdit'])) {
+    if (!$result) {
         die("database edit failed.");
     }
     else{

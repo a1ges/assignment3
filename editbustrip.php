@@ -1,7 +1,7 @@
 <?php
 include 'connectdb.php';
 // get values from textboxes
-if(isset(_POST['submitEdit'])){
+
 $urlimage = $_POST['urlimage'];
 $tripname = $_POST['tripname']; // countryvisited
 $startdate = $_POST['startdate'];
@@ -45,6 +45,6 @@ $preceeded = false;
     }
     else{
         echo "<script>alert('Edit Complete');</script>";
-    }
+    
 }
 ?>

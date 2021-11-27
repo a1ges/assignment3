@@ -18,8 +18,7 @@
   
 }
 
-header('Location: ' . $_SERVER['http://cs3319.gaul.csd.uwo.ca/vm115/assignment3/home.php/']);
-
+/*
 echo "<form name = \"editBusTripForm\" method = \"POST\">
     <!-- Headings for row of inputs (Some edittable, some not)-->
     <tr>    
@@ -53,6 +52,7 @@ echo "<form name = \"editBusTripForm\" method = \"POST\">
         include 'editbustrip.php'
     ?>
 </form>";
-
+*/
 mysqli_close($connection);
+header('location: ' . $_SERVER['HTTP_REFERER']);
 ?>

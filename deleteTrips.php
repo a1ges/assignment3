@@ -54,5 +54,5 @@ echo "<form name = \"editBusTripForm\" method = \"POST\">
 </form>";
 */
 mysqli_close($connection);
-header('location: ' . $_SERVER['HTTP_REFERER']);
+
 ?>

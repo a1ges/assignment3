@@ -75,14 +75,15 @@ include 'getTrips.php';
         <td style="text-align:center"><input type="text" id="licenseplate" name="licenseplate"></td>
         <td style="text-align:center"><input type="text" id="trpid" name="tripid" readonly style = "background-color: grey;"></td>
         <td style="text-align:center"><input type="submit" name="submitEdit" value="Submit Edits"/></td>
-    </tr>  
+    </tr>
     <?php
-    
-        include 'populateBusTrips.php';
-    ?>
+    include 'editbustrip.php';
+    ?>  
+   
 </form>
 <?php
-    include 'editbustrip.php';
+    
+    include 'populateBusTrips.php';
 ?>
 </body>
 </html>

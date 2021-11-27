@@ -90,7 +90,7 @@ include 'getTrips.php';
    </table>
 </form>
 
-<form name = "addBusTrip" method = "POST">
+
     <!-- Headings for row of inputs (Some edittable, some not)-->
     <table id = "addTrip">
     <tr>    
@@ -108,10 +108,6 @@ include 'getTrips.php';
         <td style="text-align:center"><input type="text" id="urlimage" name="urlimage"></td>
         <td style="text-align:center"><input type="text" id="tripname" name="tripname"></td>
         <td style="text-align:center"><input type="text" id="country" name="country"></td>
-
-
-        <!-- Note : Make sure start date < end date -->
-
         <td style="text-align:center"><input type="date" id="startdate" name="startdate"></td>
         <td style="text-align:center"><input type="date" id="enddate" name="enddate"></td>
         <td style="text-align:center"><input type="text" id="buslicense" name="buslicense"></td>
@@ -119,7 +115,7 @@ include 'getTrips.php';
         <td style="text-align:center"><input type="submit" name="submitEdit" value="Submit Edits"/></td>
     </tr>
    </table>
-</form>
+
 
 
 </body>

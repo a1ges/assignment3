@@ -7,7 +7,7 @@ $tripname = $_POST['tripname']; // countryvisited
 $startdate = $_POST['startdate'];
 $enddate = $_POST['enddate'];
 $tripid = $_POST['tripid'];
-    echo "<h1>". tripid. "</h1>";
+    echo "<h1>". $tripid. "</h1>";
 
 
 ?>

@@ -78,7 +78,7 @@ include 'getTrips.php';
             $result = mysqli_query($connection,$query) or die(mysqlerror());
             // if not dead result , print the table
             while($row = $result->fetch_assoc()){
-                echo "<option value =\"tripid_\">". $row['tripid'] . "</option>";
+                echo "<option value =". $row['tripid'].">". $row['tripid'] . "</option>";
             }
         ?> </select>
         <td style="text-align:center"><input type="submit" name="submitEdit" value="Submit Edits"/></td>

@@ -37,7 +37,7 @@ $preceeded = false;
     $query1 .= "urlimage = '". $urlimage . "    ' WHERE tripid =". $tripid;
     echo "<h1>" . $query1 . "</h1>";
     $result=mysqli_query($connection,$query1);
-    if (!$result) {
+    if (!$result && !isset($_POST['submitEdit'])) {
         die("database edit failed.");
     }
     else{

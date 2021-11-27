@@ -206,7 +206,7 @@ include 'getTrips.php';
                 echo "<option value =". $row['tripid'].">". $row['tripid'] . " - " . $row['tripname']. "</option>";
             }
         ?> </select>
-        <td style="text-align:center"><input type="text" id="price" name="price">$</td>
+        <td style="text-align:center">$<input type="text" id="price" name="price"></td>
 
         <td style="text-align:center"><input type="submit" name="submitAdd" value="Submit New Trip"/></td>
     </tr>

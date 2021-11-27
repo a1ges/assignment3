@@ -39,12 +39,12 @@ $preceeded = false;
     }
     $query1 .= " WHERE tripid =". $tripid;
     // debugging : echo "<h1>" . $query1 . "</h1>";
-    $result=mysqli_query($connection,$query1);
+    $result=mysqli_query($connection,$query1) or die(mysqlerror());;
     if (!$result) {
         die();
     }
     else{
-        //echo "<script>alert('Edit Complete');</script>";
+        echo "<script>alert('Edit Complete');</script>";
     
 }
 mysqli_close($connection);

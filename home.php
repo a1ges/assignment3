@@ -208,7 +208,7 @@ include 'getTrips.php';
         ?> </select>
         <td style="text-align:center">$<input type="text" id="price" name="price"></td>
 
-        <td style="text-align:center"><input type="submit" name="submitAdd" value="Book your trip!"/></td>
+        <td style="text-align:center"><input type="submit" name="submitBook" id="submitBook" value="Book your trip!"/></td>
     </tr>
     <?php
             include "addTrips.php";

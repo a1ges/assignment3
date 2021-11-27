@@ -35,7 +35,7 @@ echo "<th>Trip ID</th>";
      // add radio button for easier country editting
      
      echo "<td style=\"text-align:center\">";
-     echo "<input type=\"radio\" id = \"countrySelect\" name =\"countrySelect\" value=". $row['visitedcountry']. " width=\"100\" height=\"100\" >";
+     echo "<input type=\"radio\" id = \"countrySelect\" name =\"countrySelect\" value=". $row['tripid']. " width=\"100\" height=\"100\" >";
      echo "</td>";
      
      echo "<td style=\"text-align:center\">";
@@ -66,7 +66,7 @@ echo "<th>Trip ID</th>";
      
      echo "</tr>";	
 }
-echo "<td style=\"text-align:center\"><input type=\"submit\" value=\"Populate Edit Fields\"/></td>";
+echo "<td style=\"text-align:center\"><input type=\"submit\" name = \"delete\" value=\"Delete Selected\" onclick=\"return confirm('Are you sure?');\"/></td>";
 echo "</form>";
 }
 else{
@@ -74,7 +74,7 @@ else{
 } 
 
 
-echo "<?php include 'populateBusTrips.php' ; ?>";
+echo "<?php include 'deleteTrips.php' ; ?>";
 mysqli_free_result($result);
 mysqli_close($connection);
 ?>

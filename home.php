@@ -71,13 +71,11 @@ include 'getTrips.php'
         <td style="text-align:center"><input type="text" id="trpid" name="tripid" readonly style = "background-color: grey;"></td>"
         <td style="text-align:center"><input type="submit" value="Submit Edits"/></td>
     </tr>  
+    <?php
+        include 'editbustrip.php'
+    ?>
 </form>
-<?php
 
-include 'editbustrip.php'
-
-
-?>
 </body>
 </html>
 

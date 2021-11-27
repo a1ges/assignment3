@@ -73,18 +73,27 @@ include 'getTrips.php';
         <td style="text-align:center"><input type="date" id="enddate" name="enddate"></td>
 
         <td style="text-align:center"><input type="text" id="licenseplate" name="licenseplate"></td>
-        <td style="text-align:center"><input type="text" id="trpid" name="tripid" readonly style = "background-color: grey;"></td>
+        <td style="text-align:center"><select name="tripid" id="tripid">
+        <?php
+
+            include 'connectdb.php';
+            $query = "SELECT tripid FROM bustrips";
+            // get trip ids
+            $result = mysqli_query($connection,$query) or die(mysqlerror());
+            // if not dead result , print the table
+            while($row = $result->fetch_assoc()){
+                echo "<option value =\"tripid_\">". $row . "</option>";
+            }
+        ?> </select>
         <td style="text-align:center"><input type="submit" name="submitEdit" value="Submit Edits"/></td>
     </tr>
     <?php
+    include 'populateTripid.php';
     include 'editbustrip.php';
     ?>  
    
 </form>
-<?php
-    
-    include 'populateBusTrips.php';
-?>
+
 </body>
 </html>
 

@@ -61,7 +61,6 @@ include 'getTrips.php';
     </tr>
     <tr>    
         <!-- First table entry used to space out inputs for aesthetic reasons. -->
-        <td style="text-align:center"><input type="submit" name="populateEdit" value="Populate"/></td>
         
         <td style="text-align:center"><input type="text" id="urlimage" name="urlimage"></td>
         <td style="text-align:center"><input type="text" id="tripname" name="tripname"></td>

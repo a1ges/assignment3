@@ -75,6 +75,5 @@ else{
 include 'deleteTrips.php' ;
 
 
-mysqli_free_result($result);
 
 ?>

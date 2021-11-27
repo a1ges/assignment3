@@ -47,4 +47,6 @@ $preceeded = false;
         echo "<script>alert('Edit Complete');</script>";
     
 }
+
+mysqli_close($connection);
 ?>

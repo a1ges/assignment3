@@ -1,5 +1,5 @@
 <?php
-include 'connectdb.php';
+
 // get values from textboxes
 
 $urlimage = $_POST['urlimage'];

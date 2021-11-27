@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $startdate = $enddate;
         $enddate = $temp;
     }
-    if($urlimage == NULL || $tripname == NULL || $visitedcountry == NULL || $startdate == NULL || $enddate == NULL || $licenseplate == NULL){
+    if( $tripname == NULL || $visitedcountry == NULL || $startdate == NULL || $enddate == NULL || $licenseplate == NULL){
        echo " <script>alert('Please enter all asteriksed values before submitting a bustrip'); window.location.reload();</script>";
     }
             else{

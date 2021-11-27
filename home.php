@@ -110,9 +110,20 @@ include 'getTrips.php';
         <td style="text-align:center"><input type="text" id="country" name="country"></td>
         <td style="text-align:center"><input type="date" id="startdate" name="startdate"></td>
         <td style="text-align:center"><input type="date" id="enddate" name="enddate"></td>
-        <td style="text-align:center"><input type="text" id="buslicense" name="buslicense"></td>
+        <td style="text-align:center"><select name="tripid" id="tripid">
+        <?php
+
+            include 'connectdb.php';
+            $query = "SELECT * FROM buses";
+            // get trip ids
+            $result = mysqli_query($connection,$query) or die(mysqlerror());
+            // if not dead result , print the table
+            while($row = $result->fetch_assoc()){
+                echo "<option value =". $row['licenseplate'].">". $row['licenseplate'] . "</option>";
+            }
+        ?> </select>
         <td style="text-align:center"><input name="tripid" id="tripid"></td>
-        <td style="text-align:center"><input type="submit" name="submitEdit" value="Submit Edits"/></td>
+        <td style="text-align:center"><input type="submit" name="submitEdit" value="Submit New Trip"/></td>
     </tr>
    </table>
 </form>

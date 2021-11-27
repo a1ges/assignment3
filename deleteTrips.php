@@ -2,8 +2,10 @@
    include 'connectdb.php';
 
    $delete= $_POST["delete"];
-if(isset($tripid)){
    $tripid = $_POST["tripid"];
+   echo $tripid . $delete;
+/*
+  
    if($tripid != NULL){
    $query1= "DELETE FROM bustrips where tripid = ". $tripid ;
    $result=mysqli_query($connection,$query1);
@@ -12,6 +14,6 @@ if(isset($tripid)){
    }
   
 }
-}
+*/
 mysqli_close($connection);
 ?>

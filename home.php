@@ -84,7 +84,9 @@ include 'getTrips.php';
         ?> </select>
         <td style="text-align:center"><input type="submit" name="submitEdit" value="Submit Edits"/></td>
     </tr>
-    
+    <?php
+    include 'editbustrip.php';
+    ?>  
    </table>
 </form>
 

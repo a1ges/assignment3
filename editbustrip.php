@@ -16,7 +16,7 @@ if($startdate > $enddate){
 $tripid = $_POST['tripid'];
 
 $preceeded = false;
-    echo "<h1>". $tripid. "</h1>";
+    //echo "<h1>". $tripid. "</h1>";
     $query1= "UPDATE bustrips SET " ;// where tripid = ". $tripid ;\
     if($tripname != NULL){
         $query1 .=  "tripname ='".$tripname."'";

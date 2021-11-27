@@ -77,7 +77,8 @@ include 'getTrips.php';
         <td style="text-align:center"><input type="submit" name="submitEdit" value="Submit Edits"/></td>
     </tr>  
     <?php
-        include 'editbustrip.php'
+        include 'editbustrip.php';
+        include 'populateBusTrips.php';
     ?>
 </form>
 

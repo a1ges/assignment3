@@ -19,7 +19,7 @@
 include 'connectdb.php';
 ?>
 <h1>Welcome to the Western Bus Trip Editor</h1>
-
+<br><h2> Order table below by: </h2> <br>
 <!-- Form segment, creating order radio buttons and calling upon the generation of the database -->
 <form name = "radioOptions" method="POST">
 <!-- Ascending Order Radio Button -->

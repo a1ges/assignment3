@@ -124,7 +124,7 @@ include 'getTrips.php';
             }
         ?> </select>
         <td style="text-align:center"><input name="tripid" id="tripid"></td>
-        <td style="text-align:center"><input type="submit" name="submitEdit" value="Submit New Trip"/></td>
+        <td style="text-align:center"><input type="submit" name="submitAdd" value="Submit New Trip"/></td>
     </tr>
     <?php
             include "addTrips.php";

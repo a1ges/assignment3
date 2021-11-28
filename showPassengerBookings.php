@@ -11,7 +11,8 @@ $query = "SELECT * from bookings INNER JOIN passenger ON bookings.passengerid = 
 // debugging: echo $query;
 $result = mysqli_query($connection,$query) or die(mysqlerror());
 if($result->num_rows>0){
-  
+    echo "<br><h2> Current Trips: </h2>";
+    echo "<form name = \"bookingTable\" id = \"bookingTable\"  method = \"POST\">";
     echo "<table id = \"passengerBookingTable\">";
  echo "<tr>";
  echo "<th> Select </th>";
@@ -55,15 +56,15 @@ if($result->num_rows>0){
       
       echo "</tr>";	
  }
- echo "<td style=\"text-align:center\"><input type=\"submit\" name = \"delete\" value=\"Delete Selected\" onclick=\"return confirm('Are you sure?');\"/></td>";
+ echo "<td style=\"text-align:center\"><input type=\"submit\" id = \"". $row['firstname'] . "\"  name = \"deleteBooking\"value=\"Delete Selected\" onclick=\"return confirm('Are you sure?');\"/></td>";
  echo "</table>";
  
  }
  else{
      echo "Zero results :(";
  } 
- 
 
+ include 'deleteBooking.php';
 }
 mysqli_close($connection);
 

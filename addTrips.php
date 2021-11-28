@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $enddate = $temp;
     }
     if( $tripname == NULL || $visitedcountry == NULL || $startdate == NULL || $enddate == NULL || $licenseplate == NULL){
-       echo " <script>alert('Please enter all asteriksed values before submitting a bustrip'); ";
+       echo " <script>alert('Please enter all asteriksed values before submitting a bustrip'); window.location.reload(); ";
     }
         else{
 

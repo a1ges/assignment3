@@ -12,7 +12,7 @@ $query = "SELECT * from bookings INNER JOIN passenger ON bookings.passengerid = 
 $result = mysqli_query($connection,$query) or die(mysqlerror());
 if($result->num_rows>0){
     echo "<br><h2> Current Bookings: </h2>";
-    echo "<form name = \"bookingTable\" id = \"bookingTable\"  method = \"POST\" >";
+    echo "<form name = \"bookingTable\" id = \"bookingTable\"  method = \"GET\" >";
     echo "<table id = \"passengerBookingTable\">";
  echo "<tr>";
  echo "<th> Select </th>";
@@ -60,7 +60,7 @@ if($result->num_rows>0){
  
  echo "</table>";
  echo "<?php
- if(isset(\$_POST['deleteBooking']))){
+ if(isset(\$_GET['deleteBooking']))){
  include 'deleteBooking.php';
  }
  ?>";

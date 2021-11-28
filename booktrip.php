@@ -12,7 +12,7 @@ if($passengerid != NULL && $tripid!=NULL){
     echo "<h1>". $query . "<h1>";
     $result = mysqli_query($connection,$query) ;
     if (!$result) {
-        die("<script>alert('Invalid query please try again'); window.location.reload();</script>");
+        die("<script>alert('Invalid query please try again'); </script>");
     }
     else{
         echo "<script>alert('Edit Complete');</script>";

@@ -139,7 +139,7 @@ include 'getTrips.php';
 </form>
 
 <!--Form for viewing bustrips given a country from the drop down list -->
-<form name = "viewCountry" method="GET">
+<form name = "viewCountry" method="POST">
 <h2>Show Bustrips of given country </h2>
 <tr>
  <td style="text-align:center"><select name="countryName" id="countryName">
@@ -161,7 +161,7 @@ include 'getTrips.php';
 
   // Something posted
 
-  if (isset($_GET['submitCountry'])) {
+  if (isset($_POST['submitCountry'])) {
 	echo "Button Pressed";    
           include 'viewCountry.php';
 

@@ -225,6 +225,24 @@ include 'getTrips.php';
    </table>
 </form>
 
+<form name ="passengerTable">
+<table>
+
+    
+<tr>    
+        <th>Passenger ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Passport Number</th>
+        <th>Country of Citizenship</th>
+        <th>Expiry Date/th>
+        <th>Birth date</th>
+    </tr>
+<!-- select * from passenger INNER JOIN passports ON passports.passengerid = passenger.passengerid order by passenger.lastname  asc; --> 
+
+</table>
+        </form>
+
 
 </body>
 </html>

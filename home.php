@@ -267,7 +267,7 @@ include "showPassengerBookings.php";
             <?php
                 include 'unoccupiedTrips.php';
             ?>
-        
+        </table>
         </form>
 
 </body>

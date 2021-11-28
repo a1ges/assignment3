@@ -3,12 +3,12 @@
 
    echo "Hello";
 if(isset(_POST['selectCountry'])){
-   $delete= $_POST["deleteBookingRadio"];
-   $tripid_ = $_POST["deleteBooking"];
+   $delete= $_POST["delete"];
+   $tripid_ = $_POST["tripid"];
     echo "<br> Hello world";
 
   
-   if($tripid_ != NULL && isset($tripid_)){
+   if($tripid_ != NULL && isset($delete)){
    $query1= "DELETE FROM bustrips where tripid = '". $tripid_ . "'" ;
    echo "<h1>" . $query1 . "</h1>";
    //$result=mysqli_query($connection,$query1);

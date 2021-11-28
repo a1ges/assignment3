@@ -230,6 +230,7 @@ include 'getTrips.php';
 
     <!-- table headings -->
 <tr>    
+        <th>    Select          </th>
         <th>    Passenger ID    </th>
         <th>    First Name  </th>
         <th>    Last Name   </th>

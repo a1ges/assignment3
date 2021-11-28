@@ -1,8 +1,10 @@
 <?php
    include 'connectdb.php';
+
+   echo "Hello";
 if(isset(_POST['selectCountry'])){
-   $delete= $_POST["delete"];
-   $tripid_ = $_POST["tripid"];
+   $delete= $_POST["deleteBookingRadio"];
+   $tripid_ = $_POST["deleteBooking"];
     echo "<br> Hello world";
 
   

@@ -230,13 +230,13 @@ include 'getTrips.php';
 
     
 <tr>    
-        <th>Passenger ID</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Passport Number</th>
-        <th>Country of Citizenship</th>
-        <th>Expiry Date</th>
-        <th>Birth date</th>
+        <th>    Passenger ID    </th>
+        <th>    First Name  </th>
+        <th>    Last Name   </th>
+        <th>    Passport Number </th>
+        <th>    Country of Citizenship  </th>
+        <th>    Expiry Date </th>
+        <th>    Birth date  </th>
     </tr>
     <?php
     

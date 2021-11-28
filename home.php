@@ -235,7 +235,7 @@ include 'getTrips.php';
         <th>Last Name</th>
         <th>Passport Number</th>
         <th>Country of Citizenship</th>
-        <th>Expiry Date/th>
+        <th>Expiry Date</th>
         <th>Birth date</th>
     </tr>
     <?php
@@ -245,7 +245,7 @@ include 'getTrips.php';
     
     
     ?>
-<!-- select * from passenger INNER JOIN passports ON passports.passengerid = passenger.passengerid order by passenger.lastname  asc; --> 
+<!-- SQL Query : select * from passenger INNER JOIN passports ON passports.passengerid = passenger.passengerid order by passenger.lastname  asc; --> 
 
 </table>
         </form>

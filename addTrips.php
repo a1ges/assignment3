@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     // the assumption is that all data besides the url are guarenteed so the sql here is trivial
                     $query = "INSERT INTO bustrips VALUES ('" . $tripid. "','" . $tripname . "','" . $startdate . "','" . $enddate . "','" . $visitedcountry . "','" . $licenseplate . "','" . $urlimage . "')"  ;
-                    echo "<h1>". $query . "</h1>";
+                    //echo "<h1>". $query . "</h1>";
                     $result=mysqli_query($connection,$query);
                             if (!$result) {
                                 die("<script>alert('Invalid query please try again'); </script>");

@@ -58,7 +58,9 @@ if($result->num_rows>0){
  }
  echo "<td style=\"text-align:center\"><input type=\"submit\" id = \"". $row['firstname'] . "\"  name = \"deleteBooking\"value=\"Delete Selected\"></td>";
  echo "<?php
+ if(isset(\$_POST['deleteBooking']))){
  include 'deleteBooking.php';
+ }
  ?>";
  echo "</table>";
  

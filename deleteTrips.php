@@ -5,7 +5,7 @@
 
    $delete= $_GET["delete"];
    $tripid_ = $_GET["tripid"];
-    echo "<br> Hello world";
+   
 
   
    

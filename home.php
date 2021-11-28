@@ -141,6 +141,21 @@ include 'getTrips.php';
         <td style="text-align:center"><input type="submit" name="submitAdd" value="Submit New Trip"/></td>
     </tr>
     <?php
+    if( $_POST['tripid'] == ""){
+        $error="Please enter a Trip id<br>"; 
+    }
+    if( $_POST['country'] == ""){
+        $error="Please enter a Country Name<br>"; 
+    }
+    if( $_POST['tripname'] == ""){
+        $error="Please enter a Trip Name<br>"; 
+    }
+    if( $_POST['startdate'] == ""){
+        $error="Please enter a Start Date<br>"; 
+    }
+    if( $_POST['enddate'] == ""){
+        $error="Please enter an End Date<br>"; 
+    }
         if(isset($_POST['submitAdd'])){
             include "addTrips.php";
             }
@@ -170,7 +185,7 @@ include 'getTrips.php';
         <?php
 
   // Something posted
-
+  
   if (isset($_POST['submitCountry'])) {
 	echo "Button Pressed";    
           include 'viewCountry.php';

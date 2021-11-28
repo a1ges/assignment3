@@ -2,7 +2,7 @@
    include 'connectdb.php';
 
    echo "Hello";
-if(isset(_POST['selectCountry'])){
+
    $delete= $_POST["delete"];
    $tripid_ = $_POST["tripid"];
     echo "<br> Hello world";
@@ -20,7 +20,7 @@ if(isset(_POST['selectCountry'])){
    }
   
 }
-}
+
 
 /*
 

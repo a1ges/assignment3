@@ -56,7 +56,7 @@ if($result->num_rows>0){
       
       echo "</tr>";	
  }
- echo "<td style=\"text-align:center\"><input type=\"submit\" id = \"". $row['firstname'] . "\"  name = \"deleteBooking\"value=\"Delete Selected\" onclick=\"return confirm('Are you sure?');\"/></td>";
+ echo "<td style=\"text-align:center\"><input type=\"submit\" id = \"". $row['firstname'] . "\"  name = \"deleteBooking\"value=\"Delete Selected\"></td>";
  echo "</table>";
  
  }

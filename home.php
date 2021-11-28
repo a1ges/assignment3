@@ -214,7 +214,7 @@ include 'getTrips.php';
          
          if (isset($_GET['submitBook'])) {
             echo "Button Pressed";    
-            include "addTrips.php";
+            include "booktrip.php";
         
           } 
          

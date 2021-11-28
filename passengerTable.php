@@ -38,6 +38,8 @@ if($result->num_rows>0){
       echo "</tr>";	
       
  }
+ echo "<td style=\"text-align:center\"><input type=\"submit\" name = \"seePassengerBookings\" value=\"See Passenger Bookings\"></td>";
+
 
 
  }

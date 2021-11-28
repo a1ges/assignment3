@@ -210,6 +210,7 @@ include 'getTrips.php';
 
         <td style="text-align:center"><input type="submit" name="submitBook" id="submitBook" value="Book your trip!"/></td>
     </tr>
+        </table>
     <?php
          
          if (isset($_GET['submitBook'])) {

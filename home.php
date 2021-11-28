@@ -225,7 +225,7 @@ include 'getTrips.php';
    </table>
 </form>
 
-<form name ="passengerTable" method="POST">
+<form name ="passengerTable" method="POST"  >
 <table>
 
     <!-- table headings -->

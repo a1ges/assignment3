@@ -8,15 +8,15 @@
     echo "<br> Hello world";
 
   
-   if($tripid_ != NULL && isset($de)){
-   $query1= "DELETE FROM bustrips where tripid = '". $tripid_ . "'" ;
    
+   $query1= "DELETE FROM bustrips where tripid = '". $tripid_ . "'" ;
+   echo $query1;
    $result=mysqli_query($connection,$query1);
    if (!$result) {
     echo "<script>alert('Deletion cannot be completed. Constraint Error.');</script>";
     }
     
-   }
+   
   
 
 

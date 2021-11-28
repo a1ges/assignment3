@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             if (!$result) {
                                 die("<script>alert('Invalid query please try again'); </script>");
                             }else{echo "<script>alert('Trip successfully inserted'); </script>";}
-        //}
+        }
 
 }
 

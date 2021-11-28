@@ -4,7 +4,7 @@ include 'connectdb.php';
 $query = "SELECT bustrips.tripname FROM bustrips INNER JOIN bookings ON bustrips.tripid = bookings.tripid INNER JOIN buses ON buses.licenseplate = bustrips.licenseplate GROUP BY bustrips.tripname HAVING (COUNT(bookings.tripid) = 0) ";
 
 $result = mysqli_query($connection,$query) or die(mysqlerror());
-echo " <th>Trip Name</th>";
+echo " <th>Trip Name</th><br>";
 if($result->num_rows>0){
 
      while($row = $result->fetch_assoc()){

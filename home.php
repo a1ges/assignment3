@@ -228,7 +228,7 @@ include 'getTrips.php';
 <form name ="passengerTable">
 <table>
 
-    
+    <!-- table headings -->
 <tr>    
         <th>    Passenger ID    </th>
         <th>    First Name  </th>

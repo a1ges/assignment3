@@ -34,11 +34,8 @@ if($result->num_rows>0){
       echo "</tr>";	
       
  }
- echo "<td style=\"text-align:center\"><input type=\"submit\" name = \"delete\" value=\"Delete Selected\" onclick=\"return confirm('Are you sure?');\"/></td>";
- echo "</table>";
- 
- echo "<?php if(isset(\$_POST['delete']) ){include 'deleteTrips.php'} ?>" ;
- echo "</form>";
+
+
  }
  else{
      echo "Zero results :(";

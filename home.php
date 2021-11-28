@@ -213,7 +213,7 @@ include 'getTrips.php';
         </table>
     <?php
          
-         if (isset($_POST['submitBook'])) {
+         if (isset($_POST['Book your trip!'])) {
             echo "Button Pressed";    
             include "booktrip.php";
         

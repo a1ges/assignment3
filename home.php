@@ -143,8 +143,6 @@ include 'getTrips.php';
     <?php
         if(isset($_POST['submitAdd'])){
             include "addTrips.php";
-            }else{
-                echo "<script>alert('Invalid query please try again'); window.location.reload();</script>";
             }
     ?>
    </table>

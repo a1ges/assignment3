@@ -263,11 +263,12 @@ include "showPassengerBookings.php";
         
         <table>
            
+            <th> Bus Trips </th>
             
-            <?php
+        </table>
+        <?php
                 include 'unoccupiedTrips.php';
             ?>
-        </table>
         </form>
 
 </body>

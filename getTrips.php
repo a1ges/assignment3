@@ -67,9 +67,12 @@ echo "<th>Trip ID</th>";
      
      echo "</tr>";	
 }
-echo "<td style=\"text-align:center\"><input type=\"submit\" name = \"delete\" value=\"Delete Selected\" ></td>";
+echo "<td style=\"text-align:center\"><input type=\"submit\" name = \"delete\" value=\"Delete Selected\" onclick=\"return confirm('Are you sure?');\"/></td>";
 echo"<?php
-   include 'deleteTrips.php';?>";
+if(isset(\$_GET['delete']))
+{
+   include 'deleteTrips.php';
+} ?>";
 echo "</table>";
 
 

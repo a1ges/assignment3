@@ -69,11 +69,11 @@ echo "<th>Trip ID</th>";
 }
 echo "<td style=\"text-align:center\"><input type=\"submit\" name = \"delete\" value=\"Delete Selected\" onclick=\"return confirm('Are you sure?');\"/></td>";
 echo "</table>";
-echo"
+echo"<?php
 if(isset(\$_POST['delete']))
 {
    include 'deleteTrips.php';
-} ";
+} ?>";
 
 echo "</form>";
 }

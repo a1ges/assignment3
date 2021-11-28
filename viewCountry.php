@@ -3,7 +3,7 @@
 include 'connectdb.php';
 // Selecting all elements from bustrips   
 $query = "SELECT * FROM bustrips";
-$country = $_GET['countryName'];
+$country = $_POST['countryName'];
   if($country != NULL) $query .=" WHERE visitedcountry = '". $country . "'";
    
    $result = mysqli_query($connection,$query) or die(mysqlerror());

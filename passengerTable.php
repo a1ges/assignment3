@@ -8,7 +8,7 @@ if($result->num_rows>0){
 
      while($row = $result->fetch_assoc()){
         echo "<td style=\"text-align:center\">";
-        echo "<input type=\"radio\" id = \"passengerid\" name =\"passengerid\" value=". $row['passengerid']. " width=\"100\" height=\"100\" >";
+        echo "<input type=\"radio\" id = \"passengerid\" name =\"passengerid\" id=\"". $row['passengerid'] . "\" width=\"100\" height=\"100\" >";
         echo "</td>";
       echo "<tr>";
       // add radio button for easier country editting

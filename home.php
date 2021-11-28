@@ -141,9 +141,9 @@ include 'getTrips.php';
         <td style="text-align:center"><input type="submit" name="submitAdd" value="Submit New Trip"/></td>
     </tr>
     <?php
-        if(isset($_POST['submitAdd'])){
+        
             include "addTrips.php";
-            }
+            
     ?>
    </table>
 </form>

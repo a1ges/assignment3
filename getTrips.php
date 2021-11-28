@@ -18,7 +18,7 @@ $query = "SELECT * FROM bustrips";
 
 if($result->num_rows>0){
    echo "<br><h2> Current Trips: </h2>";
-   echo "<form name = \"selectCountry\" id = \"selectCountry\"  method = \"POST\">";
+   echo "<form name = \"selectCountry\" id = \"selectCountry\"  method = \"GET\">";
 
 
    echo "<table id = \"tripstable\">";
@@ -70,7 +70,7 @@ echo "<th>Trip ID</th>";
 echo "<td style=\"text-align:center\"><input type=\"submit\" name = \"delete\" value=\"Delete Selected\" onclick=\"return confirm('Are you sure?');\"/></td>";
 echo "</table>";
 echo"<?php
-if(isset(\$_POST['delete']))
+if(isset(\$_GET['delete']))
 {
    include 'deleteTrips.php';
 } ?>";

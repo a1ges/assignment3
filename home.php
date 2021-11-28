@@ -273,7 +273,7 @@ include "showPassengerBookings.php";
         
         <table>
            
-            <th> Bus Trips </th>
+            <th> Unoccupied Bus Trips </th>
             
         </table>
         <?php

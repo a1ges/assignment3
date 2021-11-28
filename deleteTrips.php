@@ -3,7 +3,7 @@
 if(isset(_POST['selectCountry'])){
    $delete= $_POST["delete"];
    $tripid_ = $_POST["tripid"];
-    echo "Hello world";
+    echo "<br> Hello world";
 
   
    if($tripid_ != NULL && isset($tripid_)){

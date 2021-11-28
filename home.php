@@ -238,6 +238,13 @@ include 'getTrips.php';
         <th>Expiry Date/th>
         <th>Birth date</th>
     </tr>
+    <?php
+    
+    
+    include "passengerTable.php"
+    
+    
+    ?>
 <!-- select * from passenger INNER JOIN passports ON passports.passengerid = passenger.passengerid order by passenger.lastname  asc; --> 
 
 </table>

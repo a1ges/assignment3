@@ -144,21 +144,23 @@ include 'getTrips.php';
     if( $_POST['tripid'] == ""){
         $error="Please enter a Trip id<br>"; 
     }
-    if( $_POST['country'] == ""){
+    else if( $_POST['country'] == ""){
         $error="Please enter a Country Name<br>"; 
     }
-    if( $_POST['tripname'] == ""){
+    else if( $_POST['tripname'] == ""){
         $error="Please enter a Trip Name<br>"; 
     }
-    if( $_POST['startdate'] == ""){
-        $error="Please enter a Start Date<br>"; 
+    else if( $_POST['startdate'] == ""){
+         $error="Please enter a Start Date<br>"; 
     }
-    if( $_POST['enddate'] == ""){
+    else if ( $_POST['enddate'] == ""){
         $error="Please enter an End Date<br>"; 
     }
+    else{
         if(isset($_POST['submitAdd'])){
             include "addTrips.php";
             }
+        }
     ?>
    </table>
 </form>

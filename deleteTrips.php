@@ -3,8 +3,8 @@
    echo "<script>alert('Deletion cannot be completed. Constraint Error.');</script>";
    echo "Hello";
 
-   $delete= $_POST["delete"];
-   $tripid_ = $_POST["tripid"];
+   $delete= $_GET["delete"];
+   $tripid_ = $_GET["tripid"];
     echo "<br> Hello world";
 
   

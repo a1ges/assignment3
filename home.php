@@ -225,7 +225,7 @@ include 'getTrips.php';
    </table>
 </form>
 
-<form name ="passengerTable">
+<form name ="passengerTable" method="POST">
 <table>
 
     <!-- table headings -->
@@ -249,6 +249,12 @@ include 'getTrips.php';
 <!-- SQL Query : select * from passenger INNER JOIN passports ON passports.passengerid = passenger.passengerid order by passenger.lastname  asc; --> 
 
 </table>
+
+<?php 
+
+include "showPassengerBookings.php";
+
+?>
         </form>
 
 

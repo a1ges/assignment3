@@ -11,7 +11,7 @@ $query = "SELECT * from bookings INNER JOIN passenger ON bookings.passengerid = 
 // debugging: echo $query;
 $result = mysqli_query($connection,$query) or die(mysqlerror());
 if($result->num_rows>0){
-    echo "<br><h2> Current Trips: </h2>";
+    echo "<br><h2> Current Bookings: </h2>";
     echo "<form name = \"bookingTable\" id = \"bookingTable\"  method = \"POST\">";
     echo "<table id = \"passengerBookingTable\">";
  echo "<tr>";

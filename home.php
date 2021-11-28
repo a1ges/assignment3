@@ -258,6 +258,18 @@ include "showPassengerBookings.php";
         </form>
 
 
+        <form name = "emptyBuses">
+            <!-- SQL NEEDED: SELECT bustrips.tripname as 'Trip name' FROM bustrips INNER JOIN bookings ON bustrips.tripid = bookings.tripid INNER JOIN buses ON buses.licenseplate = bustrips.licenseplate GROUP BY bustrips.tripname HAVING (COUNT(bookings.tripid) = 0) ; -->
+        
+        <table>
+            <th>Trip Name</th>
+            
+            <?php
+                include 'unoccupiedTrips.php';
+            ?>
+        
+        </form>
+
 </body>
 </html>
 
